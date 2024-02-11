@@ -1,0 +1,139 @@
+/* styles.css */
+/* Apply CSS styles to the HTML and body elements */
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+video {
+    max-width: 100%; /* Set the maximum width to 100% of its container (the window) */
+    height: auto; /* Maintain the original aspect ratio */
+}
+
+/* Style the container div to fill the available height */
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    height: auto; /* Maintain the original aspect ratio */
+}
+
+.title-png {
+    position: absolute;
+    top: 17%; /* Adjust the vertical position as needed */
+    left: 50%; /* Adjust the horizontal position as needed */
+    transform: translate(-50%, -50%);
+    width: 85%; /* Adjust based on your decal's size */
+    height: auto;
+}
+.arrow-btn {
+    padding: 40px; /* Adjust to ensure buttons are the desired size */
+    display: flex;
+    align-items: center; /* Centers the content vertically */
+    justify-content: center; /* Centers the content horizontally */
+    border: none;
+    background-color: #ec1c24;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .arrow-btn img {
+    height: 20px; /* Adjust so the image fits well within the button */
+    width: auto; /* Maintain aspect ratio */
+  }
+  .arrow-btn:hover {
+    background-color: #90171b;
+  }
+  
+  .count-display {
+    font-size: 50px;
+    padding: 50px 50px;
+    /* border: 2px solid #ec1c24; */
+    border-radius: 5px;
+    min-width: 50px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .invert{
+    transform: scaleX(-1);
+  }
+  .button-container{
+    display: flex;
+  justify-content: center; /* Center the items horizontally */
+  align-items: center; /* Align items vertically in the center */
+  gap: 20px; /* Space between the items */
+
+  }
+
+  .roll-button {
+    padding: 20px 100px; /* Adjust to ensure buttons are the desired size */
+    display: flex;
+    border: none;
+    background-color: #ec1c24;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 50px;
+    margin-left:10%;
+    font-family: sans;
+    font-weight: bold;
+  }
+  .roll-button:hover {
+    background-color: #90171b;
+  }
+  h1{
+    color: white;
+    font-family: sans;
+    font-size: 50px;
+  }
+
+  #dice-container {
+    display: flex;
+    justify-content: center; /* Center the dice images horizontally */
+    align-items: center; /* Center the dice images vertically, useful if flex items are of different height */
+    flex-wrap: wrap; /* Allow the items to wrap as needed based on the container's width */
+    
+    /* Centering the container itself */
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%); /* Adjusts the positioning to be truly centered */
+    
+    z-index: 10; /* Ensure it appears above other elements like a video background */
+
+    /* Optional: Set a minimum width to prevent the dice from stacking vertically if there's enough horizontal space */
+    min-width: 320px; /* Adjust based on the total width of your dice images plus some margin */
+}
+.imgdice1 {
+  display: none;
+  max-width: 150px; 
+  height: auto; 
+  margin: 5px; 
+}
+.imgdice2 {
+  display: none;
+  max-width: 150px; 
+  height: auto; 
+  margin: 5px; 
+}
+.imgdice3 {
+  display: none;
+  max-width: 150px; 
+  height: auto; 
+  margin: 5px; 
+}
+.imgdice4 {
+  display: none;
+  max-width: 150px; 
+  height: auto; 
+  margin: 5px; 
+}
+.imgdice5 {
+  display: none;
+  max-width: 150px; 
+  height: auto; 
+  margin: 5px; 
+}
